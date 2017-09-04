@@ -14,7 +14,7 @@
   <hr>
 </div>
 
-<div class="content-area col-lg-9 col-sm-6">
+<div class="content-area col-lg-12 col-sm-12">
   <%= image_tag @article.cover_photo.url(:large), class:"cover-photo" %>
   <%= raw(@article.article_content) %>
   <hr>
@@ -40,42 +40,41 @@ s.setAttribute('data-timestamp', +new Date());
   <%end%>
 <%= link_to 'Back to all Articles', articles_path, class:"btn btn-default" %>
 </div>
-<div class="adsense-side ad1 col-lg-3 col-sm-6">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- PuckTimes - side ad #1 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2647131622896578"
-       data-ad-slot="6404919044"
-       data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
-<div class="adsense-side ad2 col-lg-3 col-sm-6">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- PuckTimes - side ad #2 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2647131622896578"
-       data-ad-slot="5008911045"
-       data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+<!-- <section class="adsense-block">
+  <div class="adsense-side ad1 col-lg-3 col-sm-6">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2647131622896578"
+         data-ad-slot="6404919044"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div class="adsense-side ad2 col-lg-3 col-sm-6">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2647131622896578"
+         data-ad-slot="5008911045"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
-<div class="col-lg-12 col-sm-6 adsense-bottom ad5">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- PuckTimes - side ad #5 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-2647131622896578"
-       data-ad-slot="9439110642"
-       data-ad-format="auto"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+  <div class="col-lg-12 col-sm-6 adsense-bottom ad5">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2647131622896578"
+         data-ad-slot="9439110642"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</section> -->
 <hr>
 
