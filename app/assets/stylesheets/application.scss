@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ // *= require_tree .
+ // *= require_self
+ // Custom bootstrap variables must be set or import before bootstrap itself.
+@import "bootstrap";
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+*/
+
+$orange: #ff6618;
+$light-teal: #76bbc5;
+$teal: #00788a;
+$gray: #9A9C9F;
+$black: #0F0F0D;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.container-fluid {
+  width: 95vw;
+  max-width: 1000px;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+  background-color: white;
+}
+.outer-bg-container{
+  width: 100vw;
+  max-width: 2000px;
+  // background-color: #0f0b0a;
+  z-index: -2;
+}
+.bg-center{
+  width: 1000px;
+  height: 125px;
+  left: 50%;
+  margin-left:-500px;
+  z-index: -1;
+  background-color: white;
+  position: fixed;
+}
+.bg-left{
+  position:absolute;
+  height:100vh;
+  width:400px;
+  left:-400px;
+  top:0;
+  overflow:hidden;
+  z-index: -1;
+  background-image: url("http://puck-times.s3-us-west-1.amazonaws.com/shark-head-entrance-vignette.jpg");
+  background-repeat: no-repeat;
+  background-color: #464646;
+}
+.bg-right{
+  position:absolute;
+  height:100vh;
+  width:400px;
+  right:-400px;
+  top:0;
+  overflow:hidden;
+  z-index: -1;
+  background-image: url("http://puck-times.s3-us-west-1.amazonaws.com/pavs-slapper-vignette.jpg");
+  background-repeat: no-repeat;
+  background-color: #464646;
+}
+.sticky-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    position: fixed !important;
+}
+
+.header-image{
+  top:50px;
+  position: relative;
+  clear: both;
+  margin-left: auto;
+  max-height:125px;
+  width: 112%;
+  left: -6.5%;
+  z-index: 1;
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+.title{
+  margin:auto;
+  text-align: center;
+}
+.author-photo{
+  height:100px;
+}
+.cover-photo{
+  float:left;
+  width:70%;
+  max-width: 600px;
+  padding-right: 10px;
+}
+.content-area{
+ font-size: 1.1em;
+}
+.row{
+  display: inline;
+}
+.thumbnail{
+  height:300px;
+  padding: 20 20 20 20px;
+  border: none !important;
+}
+.img-thumbnail, .caption{
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none !important;
+  left: 0;
+}
+.caption {
+  z-index: 10;
+}
+.title-link, .title-link:visited{
+  color: #ffffff;
+}
+.brian-bio {
+  float:right;
+  width: 250px;
+  max-width: 50%;
+  padding: 20px;
+}
+.andy-bio {
+  float:left;
+  width: 250px;
+  max-width: 50%;
+  padding: 20px;
+}
+.signed-in-nav {
+  font-size: 0.8em;
+}
+.adsense-side{
+  height: 90vh;
+  min-width: 200px;
+  right: 0px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.adsense-bottom{
+  min-height: 200px;
+  width: 100%;
+  bottom: 0px;
+}
+.adsense-side, .adsense-bottom {
+  /*background-color: gray;*/
+  border: 1px gray;
+}
+@media screen and (max-width:767px) {
+  .container-fluid {
+    width: 95vw;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+.btn{
+    white-space: pre-wrap !important; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word !important; /* Internet Explorer 5.5+ */
+}
