@@ -1,5 +1,5 @@
 
-<h1 class="title">San Jose Sharks Insight & Analysis</h1>
+<h1 class="title">In-Depth Coverage of Bellarmine Athletics</h1>
 <% if user_signed_in? && (current_user.email == "bbensch@gmail.com" || current_user.email == "abensch66@gmail.com") %>
 <h3>
   <%= link_to 'Create New Article', new_article_path, class:"btn btn-default" %>
@@ -42,7 +42,6 @@
     <div class="col-sm-10 col-md-6">
       <div class="thumbnail">
         <%= image_tag article.cover_photo.url(:large), alt:"cover-photo", class:"img-responsive img-thumbnail" %>
-        <!-- <img itemprop="image" src="http://i2.wp.com/thehockeywriters.com/wp-content/uploads/2015/09/Max-Domi.jpg?zoom=2&amp;resize=395%2C238" alt="5 Reasons to Believe in the San Jose Sharks" class="img-responsive img-thumbnail" width="395" height="238"> -->
         <div class="caption">
           <%= link_to article.title, article, :class=>"btn btn-primary title-link" %>
         </div>
